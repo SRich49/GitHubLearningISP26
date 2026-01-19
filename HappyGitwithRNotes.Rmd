@@ -1,0 +1,12 @@
+---
+title: "HappyGit with R Notes"
+author: "Sydney Rich"
+date: "2026-01-19"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## HappyGit with R Notes
