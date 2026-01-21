@@ -81,3 +81,32 @@ You can get out of this by storing the PAT explicity in R
 
 You should now be able to work with GitHub now (push/pull) Yay!
 
+### <ins> Chapter 11: Connect to GitHub
+Push/Pull to GitHub from my computer
+Create a repo if it does not already exist
+Near “Repositories”, click the big green “New” button. Or, if you are on your own profile page, click on “Repositories”, then click the big green “New” button. Fill this as desired.
+
+Copy a clone URL to your clipboard, preferrably if following this it would be the HTTPS URL.
+
+<ins> Clone the repo to your local computer </ins>
+Using command line Git
+  - go to shell
+  - note directory (pwd displays working directory, cd changes directory)
+  - clone repo from GitHub to computer using
+git clone
+https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+  - the https://… should match the https://… url
+
+add a line to README and verify Git notices the change:
+echo "A line I wrote on my local computer  " >> README.md
+git status
+
+### <ins> Chapter 12: Connect RStudio to Git and Github </ins>
+
+Verifies RStudio can issue Git commands for you. If you succeed, it means your setup is DONE.
+
+Prereqs:
+  - registered a GitHub account (chapter 4)
+  - installed/updated R and R Studio (chapter 5)
+  - installed Git (chapter 6)
+  - can push pull for GitHub to the command line (chapter 11)
