@@ -26,7 +26,23 @@ Starting a Shell from RStudio
   Tools > *Terminal* launches in RStudio (most typical/"useful")
   Tools > *Shell* launches in an external window
 
-
+### <ins> Basic Shell Commands </ins>
+Excerpt from Textbook
+pwd (print working directory). Shows directory or “folder” you are currently operating in. This is not necessarily the same as the R working directory you get from getwd().
+ls (list files). Shows the files in the current working directory. This is equivalent to looking at the files in your Finder/Explorer/File Manager. Use ls -a to also list hidden files, such as .Rhistory and .git.
+cd (change directory). Allows you to navigate through your directories by changing the shell’s working directory. You can navigate like so:
+go to subdirectory foo of current working directory: cd foo
+go to parent of current working directory: cd ..
+go to your “home” directory: cd ~ or simply cd
+go to directory using absolute path, works regardless of your current working directory: cd /home/my_username/Desktop. Windows uses a slightly different syntax with the slashes between the folder names reversed, \, e.g. cd C:\Users\MY_USERNAME\Desktop.
+Pro tip 1: Dragging and dropping a file or folder into the terminal window will paste the absolute path into the window.
+Pro tip 2: Use the tab key to autocomplete unambiguous directory and file names. Hit tab twice to see all ambiguous options.
+Use arrow-up and arrow-down to repeat previous commands. Or search for previous commands with CTRL + r.
+A few Git commands:
+git status is the most used git command and informs you of your current branch, any changes or untracked files, and whether you are in sync with your remotes.
+git remote -v lists all remotes. Very useful for making sure git knows about your remote and that the remote address is correct.
+git remote add origin GITHUB_URL adds the remote GITHUB_URL with nickname origin.
+git remote set-url origin GITHUB_URL changes the remote url of origin to GITHUB_URL. This way you can fix typos in the remote url.
 
 
 
