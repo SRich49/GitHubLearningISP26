@@ -10,7 +10,7 @@ your computer whose job it is to run other programs.
 
 Bash
 
-\- most common shell, sometimes used as a proxy
+- most common shell, sometimes used as a proxy
 
 HappyGit shells are used for tasks like
 
@@ -18,51 +18,75 @@ HappyGit shells are used for tasks like
 
 - doing Git operations that we don’t want or can’t use RStudio for
 
-  Can be less ambiguous and perishable than graphical user interfaces
-  (GUIs)
+Can be less ambiguous and perishable than graphical user interfaces
+(GUIs)
 
 Starting a Shell from RStudio Tools \> *Terminal* launches in RStudio
 (most typical/“useful”) Tools \> *Shell* launches in an external window
 
 ### <ins> Basic Shell Commands </ins>
 
-Excerpt from Textbook pwd (print working directory). Shows directory or
-“folder” you are currently operating in. This is not necessarily the
-same as the R working directory you get from getwd(). ls (list files).
-Shows the files in the current working directory. This is equivalent to
-looking at the files in your Finder/Explorer/File Manager. Use ls -a to
-also list hidden files, such as .Rhistory and .git. cd (change
-directory). Allows you to navigate through your directories by changing
-the shell’s working directory. You can navigate like so: go to
-subdirectory foo of current working directory: cd foo go to parent of
-current working directory: cd .. go to your “home” directory: cd ~ or
-simply cd go to directory using absolute path, works regardless of your
-current working directory: cd /home/my_username/Desktop. Windows uses a
-slightly different syntax with the slashes between the folder names
-reversed, , e.g. cd C:\_USERNAME. Pro tip 1: Dragging and dropping a
-file or folder into the terminal window will paste the absolute path
-into the window. Pro tip 2: Use the tab key to autocomplete unambiguous
-directory and file names. Hit tab twice to see all ambiguous options.
-Use arrow-up and arrow-down to repeat previous commands. Or search for
-previous commands with CTRL + r. A few Git commands: git status is the
-most used git command and informs you of your current branch, any
-changes or untracked files, and whether you are in sync with your
-remotes. git remote -v lists all remotes. Very useful for making sure
-git knows about your remote and that the remote address is correct. git
-remote add origin GITHUB_URL adds the remote GITHUB_URL with nickname
-origin. git remote set-url origin GITHUB_URL changes the remote url of
-origin to GITHUB_URL. This way you can fix typos in the remote url.
+- `pwd` (print working directory): Shows directory you are currently
+  operating in. Not necessarily the same as the `R` working directory
+  from `getwd()`
+
+- `ls` (list files): Shows the files in the current working directory.
+  Use `ls -a` to also list hidden files, such as `.Rhistory` and `.git`.
+
+- `cd` (change directory): Lets you to navigate through your directories
+  by changing the shell’s working directory. You can navigate by:
+
+  - go to subdirectory `foo` of current working directory: `cd foo`
+
+  - go to parent of current working directory: `cd ..` go to your “home”
+    directory: `cd ~` or simply `cd`
+
+  - go to directory using absolute path, works no matter your current
+    working directory: `cd /home/my_username/Desktop`. Windows uses a
+    slightly different syntax with the slashes between the folder names
+    reversed.
+
+    - Pro tip 1: Dragging and dropping a file or folder into the
+      terminal window will paste the absolute path into the window.
+
+    - Pro tip 2: Use the `tab` key to auto complete unambiguous
+      directory and file names. Hit `tab` twice to see all ambiguous
+      options.
+
+      - Use arrow-up and arrow-down to repeat previous commands. Or
+        search for previous commands: `CTRL + r` .
+
+A few Git commands:
+
+- `git status`: most used git command. informs you of your current
+  branch, any changes or untracked files, and whether you are in sync
+  with your remotes.
+
+- `git remote -v`: lists all remotes. Very useful for making sure `git`
+  knows about your remote and that the remote address is correct.
+
+- `git remote add origin GITHUB_URL`: adds the remote `GITHUB_URL` with
+  nickname `origin`.
+
+- `git remote set-url origin GITHUB_URL` changes the remote url of
+  `origin` to `GITHUB_URL`. This way you can fix typos in the remote
+  url.
 
 ### <ins> Chapter 7: Introduce yourself to Git </ins>
 
-In the shell: git config –global user.name “Jane Doe” git config –global
-user.email “<jane@example.com>” git config –global –list
+In the shell:
+
+`git config --global user.name "Jane Doe"`
+
+`git config --global user.email "jane@example.com"`
+
+`git config --global --list`
 
 sub in name and **email associated with your GitHub account**
 
 ### <ins> Chapter 8: Install a Git Client (high recommend) </ins>
 
-Use of a GUI opposed to command is extermely helpful, especially when
+Use of a GUI opposed to command is extremely helpful, especially when
 getting started
 
 Git is really just individual commands executed in the shell, which can
@@ -82,24 +106,38 @@ personal access token (PAT)
 Go to [GitHub Token](https://github.com/settings/tokens) and click
 “Generate token.”
 
-to do this from R: usethis::create_github_token() Copy PAT as you will
-not be able to come back for it, you will provide it next time a Git
-operation asks for your password
+to do this from R:
 
-You can get out of this by storing the PAT explicity in R
-gitcreds::gitcreds_set()
+`usethis::create_github_token()`
 
-? Enter password or token: ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -\>
-Adding new credentials… -\> Removing credentials from cache… -\> Done.
+Copy PAT as you will not be able to come back for it, you will provide
+it next time a Git operation asks for your password
 
-You should now be able to work with GitHub now (push/pull) Yay!
+You can get out of this by storing the PAT explicity in R:
+
+`gitcreds::gitcreds_set()`
+
+`? Enter password or token:`
+
+`ghp_xxxxxxxxxxxxxxxxxxxxx`
+
+`-> Adding new credentials...`
+
+`-> Removing credentials from cache...`
+
+`-> Done.`
+
+You should now be able to work with GitHub now to push and pull. Yay!
 
 ### <ins> Chapter 11: Connect to GitHub
 
-Push/Pull to GitHub from my computer Create a repo if it does not
-already exist Near “Repositories”, click the big green “New” button. Or,
-if you are on your own profile page, click on “Repositories”, then click
-the big green “New” button. Fill this as desired.
+Pushing and Pulling from to GitHub from your computer.
+
+<u>Create a repo if it does not already exist:</u>
+
+- Near “Repositories”, click the big green “New” button. Or, if you are
+  on your profile page, click “Repositories”, then click the big green
+  “New” button. Fill as desired.
 
 Copy a clone URL to your clipboard, preferrably if following this it
 would be the HTTPS URL.
@@ -108,20 +146,59 @@ would be the HTTPS URL.
 Clone the repo to your local computer
 </ins>
 
-Using command line Git - go to shell - note directory (pwd displays
-working directory, cd changes directory) - clone repo from GitHub to
-computer using git clone
-<https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git> - the <https://>…
-should match the <https://>… url
+Using command line Git
 
-add a line to README and verify Git notices the change: echo “A line I
-wrote on my local computer” \>\> README.md git status
+- go to shell
+
+- note directory (`pwd` displays working directory, `cd` changes
+  directory)
+
+- clone repo from GitHub to computer using
+
+`git clone <https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git>`
+
+(the <https://>… should match the <https://>… url)
+
+add a line to README and verify Git notices the change:
+`echo "A line I wrote on my local computer " >> README.md git status`
 
 ### <ins> Chapter 12: Connect RStudio to Git and Github </ins>
 
 Verifies RStudio can issue Git commands for you. If you succeed, it
 means your setup is DONE.
 
-Prereqs: - registered a GitHub account (chapter 4) - installed/updated R
-and R Studio (chapter 5) - installed Git (chapter 6) - can push pull for
-GitHub to the command line (chapter 11)
+Prereqs:
+
+- registered a GitHub account (chapter 4)
+
+- installed/updated R and R Studio (Chapter 5)
+
+- installed Git (Chapter 6)
+
+- can push/pull for GitHub to the command line (Chapter 11)
+
+### <ins> Chapter 18: Test drive R Markdown </ins>
+
+Working on authoring an R Markdown doc and rendering it to HTML and how
+to commit and push it.
+
+[Official R Markdown documentation](http.//rmarkdown.rstudio.com/)
+
+Initiating an R Markdown: *File \> New File \> R Markdown* (have output
+as HTML, file name should end in `.rmd` or `.Rmd`.
+
+It is recommended at commit at this point so changes will appear as a
+“diff” in the Git Pane and you can track history.
+
+Committing: “Knit HTML” or *File \> Knit Document* then commit as usual.
+You can push this change to GitHub if you feel so inclined.
+
+On your GitHub, you should see both an Rmd file (Which might not have an
+obvious output) as well as an HTML file (that is probably ugly.)
+
+<ins>
+Fixing the Output format
+</ins>
+
+At the top of your R Markdown code, change output to
+`output: github_document`
