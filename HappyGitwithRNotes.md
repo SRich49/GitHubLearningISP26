@@ -8,11 +8,18 @@ Sydney Rich
 Shell (pseudo-synonyms: terminal, command line, console) - a program on
 your computer whose job it is to run other programs.
 
-Bash - most common shell, sometimes used as a proxy
+Bash
 
-HappyGit shells are used for tasks like - navigating the file system -
-doing Git operations that we don’t want or can’t use RStudio for Can be
-less ambiguous and perishable than graphical user interfaces (GUIs)
+\- most common shell, sometimes used as a proxy
+
+HappyGit shells are used for tasks like
+
+- navigating the file system
+
+- doing Git operations that we don’t want or can’t use RStudio for
+
+  Can be less ambiguous and perishable than graphical user interfaces
+  (GUIs)
 
 Starting a Shell from RStudio Tools \> *Terminal* launches in RStudio
 (most typical/“useful”) Tools \> *Shell* launches in an external window
