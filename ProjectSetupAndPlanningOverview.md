@@ -1,0 +1,51 @@
+Preliminary Project Setup and Planning
+================
+Sydney Rich
+2026-01-16
+
+### <ins>Priority Skills/Goals</ins>
+
+My primary goal is becoming familiar with making appealing data
+visualizations in R, as well as being able to present them in more
+professional ways, such as a clean Github.
+
+### <ins>Possible Learning Resources</ins>
+
+[R for Data Science 2e](https://r4ds.hadley.nz/intro.html)
+
+[Github
+Tutorials](https://docs.github.com/en/get-started/start-your-journey/hello-world)
+
+[HappyGit with R](https://happygitwithr.com/)
+
+Datacamp
+
+### <ins>Project Datasets</ins>
+
+I was thinking about utilizing the data I collected over the summer on
+basketball comebacks and points, however this data is very messy and I
+feel like it would be a better use of my time to do some different,
+smaller projects using preexisting datasets so I can really focus on the
+coding skills rather than trying to clean and manage data that is
+already flawed.
+
+### <ins>Organizational Strategy</ins>
+
+I will keep track of what I’ve learned through the creation of R
+markdown files that document data exploration and visualization code
+based on my smaller projects. I think it would also be beneficial to
+create a markdown file as I work through the R of Data Science text,
+that way I can have a master overview of the code I have learned.
+
+I plan to work primarily in the library and structure my schedule in
+relation to my softball practice and lifts.
+
+### <ins>Progress Tracking</ins>
+
+I will document my progress through progression in the R for Data
+Science textbook and coding examples I can report. My goal for the end
+of this week is to go through and identify specific plots and skills I
+want to work on, find datasets that contain structures I need to create
+those visualizations, and then try and output one/two markdown files
+exemplifying those skills for each week. I will create a progress
+tracker in Google sheets to keep track of this.

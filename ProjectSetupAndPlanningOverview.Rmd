@@ -1,8 +1,8 @@
 ---
-title: "Project Setup and Planning Overview"
+title: "Preliminary Project Setup and Planning"
 author: "Sydney Rich"
 date: "2026-01-16"
-output: html_document
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
