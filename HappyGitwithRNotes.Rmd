@@ -14,12 +14,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### <ins>Appendix A: The Shell</ins>
 
-Shell (pseudo-synonyms: terminal, command line, console) - a program on
+Shell (pseudo-synonyms: terminal, command line, console): a program on
 your computer whose job it is to run other programs.
 
-Bash
-
--   most common shell, sometimes used as a proxy
+Bash: most common shell, sometimes used as a proxy
 
 HappyGit shells are used for tasks like
 
@@ -204,7 +202,10 @@ It is recommended at commit at this point so changes will appear as a
 Committing: "Knit HTML" or *File \> Knit Document* then commit as usual.
 You can push this change to GitHub if you feel so inclined.
 
-On your GitHub, you should see both an Rmd file (Which might not have an obvious output) as well as an HTML file (that is probably ugly.)
+On your GitHub, you should see both an Rmd file (Which might not have an
+obvious output) as well as an HTML file (that is probably ugly.)
 
-<ins> Fixing the Output format </ins>
-At the top of your R Markdown code, change output to `output: github_document`
+<ins>Fixing the Output format</ins>
+
+At the top of your R Markdown code, change output to
+`output: github_document`
