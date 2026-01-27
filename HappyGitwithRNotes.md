@@ -202,3 +202,10 @@ Fixing the Output format
 
 At the top of your R Markdown code, change output to
 `output: github_document`
+
+###<ins> Chapter 20: Repo, commit, diff, tag </ins>
+
+Commit - A snapshot of your work as it exists, it is recommended to do this frequently
+Push - You "push" you edits you've made to GitHub, these can be made at the completion of major sections
+  (n.b. if you are collaborating with other people, you might want to push more often as this will help mitigate remote changes)
+Diff - Previous changes that you've made
